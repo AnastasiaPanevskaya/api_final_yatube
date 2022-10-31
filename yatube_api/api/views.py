@@ -4,8 +4,8 @@ from rest_framework import viewsets, filters
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.pagination import LimitOffsetPagination
 
-from api.serializers import (GroupSerializer, PostSerializer, CommentSerializer,
-                             FollowSerializer)
+from api.serializers import (GroupSerializer, PostSerializer,
+                             CommentSerializer, FollowSerializer)
 from api.permissions import IsOwnerOrReadOnly
 
 
