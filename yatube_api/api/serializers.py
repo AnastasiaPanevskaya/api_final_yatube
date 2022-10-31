@@ -5,6 +5,7 @@ from rest_framework.validators import UniqueTogetherValidator
 
 from posts.models import Comment, Post, Follow, Group, User
 
+
 class GroupSerializer(serializers.ModelSerializer):
 
     class Meta:
