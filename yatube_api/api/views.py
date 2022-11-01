@@ -7,6 +7,7 @@ from rest_framework.pagination import LimitOffsetPagination
 from api.serializers import (GroupSerializer, PostSerializer,
                              CommentSerializer, FollowSerializer)
 from api.permissions import IsOwnerOrReadOnly
+from api.mixins import CreateListGenericRetrieveViewSet
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
@@ -37,7 +38,7 @@ class PostViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user)
 
 
-class FollowViewSet(viewsets.ModelViewSet):
+class FollowViewSet(CreateListGenericRetrieveViewSet):
     serializer_class = FollowSerializer
     permission_classes = [IsAuthenticated]
     filter_backends = (filters.SearchFilter,)
