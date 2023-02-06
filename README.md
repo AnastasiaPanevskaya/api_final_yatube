@@ -22,6 +22,5 @@ python manage.py migrate
 python manage.py runserver
 
 ## Примеры запросов 
-/api/v1/posts/ (GET)
-/api/v1/posts/ (POST)
-/api/v1/posts/{id}/ (PUT)
+Примеры запросов доступны по адресу:
+http://127.0.0.1:8000/redoc/
