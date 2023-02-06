@@ -11,7 +11,7 @@ cd api_final_yatube
 
 ### Создать и запуспустить виртуальное окружение:
 python -m venv venv
-source venv/Scripts/activate
+source venv/Scripts/activate  
 
 ### Установить зависимости:
 pip install -r requirements.txt
