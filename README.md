@@ -9,7 +9,7 @@ git clone git@github.com:AnastasiaPanevskaya/api_final_yatube.git
 ### Заходим в директорию проекта:
 cd api_final_yatube
 
-### Создать и запуспустить виртуальное окружение:
+### Создать и запустить виртуальное окружение:
 python -m venv venv  
 source venv/Scripts/activate  
 
